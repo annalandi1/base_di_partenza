@@ -12,6 +12,7 @@ body {
 hr {display: none;} /* rimuove l'elemento */
 
 /* HEADER */
+
 header {
     background: rgb(0,160,198);
     background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
@@ -101,6 +102,8 @@ iframe {
 }
 
 /* TABELLE */
+
+
 table {
     margin-bottom: 2em;
 }
@@ -178,3 +181,60 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+
+/* query*/ 
+
+@media screen and (min-width: 576px) {
+    nav ul li{
+      display: inline;
+    }
+    table{
+       width: 80% ;
+    }  
+ }
+@media screen and (min-width: 768px) {
+    table{
+        margin:auto;
+        width: 80%;
+     }  
+}
+@media screen and (min-width: 1200px) {
+    body{
+    width: 90%;
+    margin: auto;
+    }
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header div{
+        align-items: center;
+        display: flex;
+    }
+    header img {
+        margin-right: 15px;
+    }
+    header div p{
+        margin: 0;
+    }
+    header ul {
+        text-align: end;
+        justify-content: center;
+        margin: 0;
+    }
+    header li{
+        padding: 5px;
+    }
+    
+    iframe{
+        width: 50%;
+        display: inline;
+    }
+    section{
+        border-radius: 1.4em;
+        width: 50%;
+    }
+}
+
